@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Emma Rose</title>
+  <meta name="description" content="Musings on romance, writing, books, and all the cozy things that make life sweeter — from author Emma Rose." />
+
+  <!-- Inter from Google Fonts; Georgia falls back to the system serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Compiled Tailwind v4 stylesheet (built from src/input.css) -->
+  <link rel="stylesheet" href="./src/output.css" />
+</head>
+<body class="bg-white font-sans text-navy antialiased">
+
+  <!-- ============ HEADER (shared — byte-identical across all pages) ============ -->
+  <header class="sticky top-0 z-50 border-b border-cream/30 bg-white shadow-sm">
+    <div class="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between px-8">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-cream to-gold text-xl leading-none text-white">✨</span>
+        <span class="flex flex-col">
+          <span class="font-serif text-xl leading-7 text-navy">Emma Rose</span>
+          <span class="text-xs leading-4 text-slate">Romance &amp; Children's Author</span>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="flex items-center gap-8 text-base font-medium tracking-tight">
+          <li><a href="index.html" class="text-slate transition-colors hover:text-navy">Home</a></li>
+          <li><a href="books.html" class="text-slate transition-colors hover:text-navy">Books</a></li>
+          <li><a href="blog.html" class="text-slate transition-colors hover:text-navy">Blog</a></li>
+          <li><a href="about.html" class="text-slate transition-colors hover:text-navy">About</a></li>
+          <li><a href="events.html" class="text-slate transition-colors hover:text-navy">Events</a></li>
+          <li><a href="contact.html" class="text-slate transition-colors hover:text-navy">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-cream via-gold to-cream">
+      <div class="pointer-events-none absolute inset-0 opacity-10" aria-hidden="true">
+        <div class="absolute left-20 top-10 h-40 w-40 rounded-full bg-sky blur-3xl"></div>
+        <div class="absolute right-24 top-10 h-32 w-32 rounded-full bg-blush blur-3xl"></div>
+      </div>
+      <div class="relative mx-auto max-w-[1280px] px-8 py-20 text-center">
+        <h1 class="font-serif text-6xl leading-none text-navy">Blog</h1>
+        <p class="mx-auto mt-6 max-w-[672px] text-xl tracking-tight text-navy">
+          Musings on romance, writing, books, and all the cozy things that make life sweeter
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORY FILTERS ============ -->
+    <section class="bg-white pt-12">
+      <div class="mx-auto max-w-[1280px] px-8">
+        <div class="flex flex-wrap items-center gap-3">
+          <button type="button" class="rounded-full bg-cream px-4 py-2 text-sm font-medium text-navy">All</button>
+          <button type="button" class="rounded-full border border-cream/40 bg-[#f0f8ff] px-4 py-2 text-sm font-medium text-navy transition-colors hover:bg-cream/40">Romance Writing</button>
+          <button type="button" class="rounded-full border border-cream/40 bg-[#f0f8ff] px-4 py-2 text-sm font-medium text-navy transition-colors hover:bg-cream/40">Writing Process</button>
+          <button type="button" class="rounded-full border border-cream/40 bg-[#f0f8ff] px-4 py-2 text-sm font-medium text-navy transition-colors hover:bg-cream/40">Character Development</button>
+          <button type="button" class="rounded-full border border-cream/40 bg-[#f0f8ff] px-4 py-2 text-sm font-medium text-navy transition-colors hover:bg-cream/40">Book Recommendations</button>
+          <button type="button" class="rounded-full border border-cream/40 bg-[#f0f8ff] px-4 py-2 text-sm font-medium text-navy transition-colors hover:bg-cream/40">Writing Life</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOG POST GRID ============ -->
+    <section class="bg-white py-12">
+      <div class="mx-auto max-w-[1280px] px-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+          <!-- Post 1 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-clean-romance.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Romance Writing</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">May 15, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">Writing Sweet Romance: Why Clean Love Stories Matter</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                In a world full of spice, there's something special about romance novels that focus on the heart. Here's why I'm passionate about writing clean, wholesome love stories.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">6 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-cozy-settings.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Writing Process</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">April 28, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">Behind the Scenes: How I Create My Cozy Settings</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                From charming bakeries to quaint bookshops, learn how I craft the perfect small-town settings that make readers want to book a one-way ticket!
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">8 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-characters.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Character Development</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">April 10, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">Book Boyfriends &amp; Book Girlfriends: Creating Swoon-Worthy Characters</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                What makes a romance character truly unforgettable? It's not just about looks—it's about heart, growth, and that special spark.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">7 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-reading-list.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Book Recommendations</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">March 22, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">My 2026 Reading List: Sweet Romances You Can't Miss</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                Fellow romance readers, unite! Here are my favorite clean romance reads of the year so far. Grab your tea and your TBR list!
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">5 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-writing-for-kids.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Children's Books</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">February 14, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">Writing for Kids: The Magic of Children's Stories</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                Switching from romance to children's books was a beautiful challenge. Here's what I learned about writing for young hearts and imaginations.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">6 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="flex flex-col overflow-hidden rounded-3xl border border-cream/30 bg-white shadow-sm transition-transform hover:-translate-y-1">
+            <div class="relative">
+              <img src="./images/blog-writing-routine.jpg" alt="" class="h-[200px] w-full object-cover" />
+              <span class="absolute left-4 top-4 rounded-full bg-cream px-3 py-1 text-xs font-medium text-navy">Writing Life</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs text-slate">January 18, 2026</p>
+              <h2 class="mt-2 font-serif text-xl leading-7 text-navy">Coffee, Courage, and Creativity: My Writing Routine</h2>
+              <p class="mt-3 text-sm leading-relaxed tracking-tight text-slate">
+                Ever wonder what a romance author's day looks like? Spoiler: it involves lots of coffee, daydreaming, and the occasional dance break!
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span class="text-sm text-slate">5 min read</span>
+                <a href="#" class="text-sm font-medium text-navy hover:underline">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER STRIP ============ -->
+    <section class="bg-white pb-20">
+      <div class="mx-auto max-w-[1280px] px-8">
+        <div class="rounded-3xl bg-gradient-to-r from-cream to-gold p-12 text-center shadow-sm">
+          <h2 class="font-serif text-3xl text-navy">Get new posts in your inbox →</h2>
+          <p class="mt-3 tracking-tight text-navy">Writing updates, bookish goodness, and the occasional love letter</p>
+          <form class="mx-auto mt-8 flex max-w-[560px] flex-col gap-3 sm:flex-row">
+            <label for="blog-email" class="sr-only">Your email address</label>
+            <input id="blog-email" type="email" name="email" placeholder="Your email address"
+              class="flex-1 rounded-[20px] border border-sky/30 bg-white px-4 py-3 tracking-tight text-navy placeholder:text-slate focus:outline-none focus:ring-2 focus:ring-sky" />
+            <button type="submit" class="rounded-[20px] bg-navy px-8 py-3 font-medium tracking-tight text-white shadow-lg transition-transform hover:-translate-y-0.5">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared — byte-identical across all pages) ============ -->
+  <footer class="bg-gradient-to-r from-cream to-gold">
+    <div class="mx-auto max-w-[1280px] px-8 py-12">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div>
+          <h3 class="font-serif text-lg text-navy">Emma Rose</h3>
+          <p class="mt-4 max-w-[384px] text-sm leading-5 tracking-tight text-navy">
+            Writing sweet romances and whimsical children's stories that bring joy, hope, and a sprinkle of magic to readers of all ages
+          </p>
+        </div>
+        <div>
+          <h4 class="font-serif text-base text-navy">Quick Links</h4>
+          <ul class="mt-4 space-y-2 text-sm text-slate">
+            <li><a href="books.html" class="transition-colors hover:text-navy">Books</a></li>
+            <li><a href="blog.html" class="transition-colors hover:text-navy">Blog</a></li>
+            <li><a href="events.html" class="transition-colors hover:text-navy">Events</a></li>
+            <li><a href="contact.html" class="transition-colors hover:text-navy">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-base text-navy">Connect</h4>
+          <ul class="mt-4 space-y-2 text-sm text-slate">
+            <li><a href="#" class="transition-colors hover:text-navy">Instagram</a></li>
+            <li><a href="#" class="transition-colors hover:text-navy">BookTok</a></li>
+            <li><a href="#" class="transition-colors hover:text-navy">Goodreads</a></li>
+            <li><a href="#" class="transition-colors hover:text-navy">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-navy/20 pt-8">
+        <p class="text-center text-sm tracking-tight text-slate">© 2026 Emma Rose. All rights reserved. Made with ♡</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
